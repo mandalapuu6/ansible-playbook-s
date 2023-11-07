@@ -1,0 +1,8 @@
+-
+ name: to remove net-tools
+ hosts: all
+ tasks: 
+  - command:
+     cmd: yum remove net-tools -y
+  - command:
+     cmd: service httpd start
