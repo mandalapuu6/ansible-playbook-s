@@ -1,0 +1,6 @@
+- 
+ name: To create a folder.
+ hosts: host1
+ tasks:
+  - command:
+     cmd: mkdir /opt/USA
