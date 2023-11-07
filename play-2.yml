@@ -1,0 +1,7 @@
+- 
+ name: To install net-tools
+ hosts: host1
+ tasks:
+   - yum:
+      name: net-tools
+      state: present
