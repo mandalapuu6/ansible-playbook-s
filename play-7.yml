@@ -1,0 +1,10 @@
+- 
+ name: to create a file and write hello world in that file.
+ hosts: all
+ tasks:
+  - file:
+    path: /opt/USA/countries.txt
+    state: touck
+  - copy: 
+     dest: /opt/USA/countries.txt
+     content: 'Usa, japan. india, Russia'
