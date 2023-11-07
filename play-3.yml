@@ -1,0 +1,10 @@
+- 
+ name: to install httpd application.
+ hosts: host1
+ tasks:
+   - yum:
+      name: httpd
+      state: present
+   - services:
+      name: httpd
+      state: start
