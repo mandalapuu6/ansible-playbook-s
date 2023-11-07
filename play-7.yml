@@ -4,7 +4,7 @@
  tasks:
   - file:
     path: /opt/USA/countries.txt
-    state: touck
+    state: touch
   - copy: 
      dest: /opt/USA/countries.txt
      content: 'Usa, japan. india, Russia'
