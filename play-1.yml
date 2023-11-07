@@ -3,4 +3,4 @@
  hosts: host1
  tasks:
    - command:
-       cmd: rm /root/directory-1
+       cmd: rm /root/directory-1/notes.txt
