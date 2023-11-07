@@ -1,0 +1,6 @@
+- 
+ name: to stop the httpd services.
+ hosts: host1
+ tasks: 
+   - service:
+      state: stopped
