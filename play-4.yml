@@ -3,4 +3,5 @@
  hosts: host1
  tasks: 
    - service:
+      name: httpd
       state: stopped
