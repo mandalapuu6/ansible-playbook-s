@@ -3,8 +3,8 @@
  hosts: all
  tasks:
   - file:
-    path: /opt/USA/countries.txt
-    state: touch
+     path: /opt/USA/countries.txt
+     state: touch
   - copy: 
      dest: /opt/USA/countries.txt
      content: 'Usa, japan. india, Russia'
