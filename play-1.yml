@@ -1,0 +1,6 @@
+-
+ name: code to delete a file
+ hosts: host1
+ tasks:
+   - command:
+       cmd: rm /root/directory-1
