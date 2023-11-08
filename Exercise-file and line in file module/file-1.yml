@@ -11,9 +11,9 @@
       path: /root/india/states.txt
       state: touch
    - name: code to write content.
-     file:
+     lineinfile:
       path: /root/india/states.txt
-      line: 'Andhra pradesh , Telengana , kerala , Tamil Nadu , karnataka , Mumbai , Gujarath etc'
+      line: 'Andhra pradesh'
    - name: code to execute user permission.
      file:
       path: /root/india/states.txt
