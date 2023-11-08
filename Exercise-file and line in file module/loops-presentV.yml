@@ -1,12 +1,12 @@
 - 
-  name: pb on use case of loops.
-  hosts: host1
-  tasks:
-    - yum:
-       name: "{{item}}"
-       state: present
-      loops:
-       - git
-       - docker
-       - net-tools
-       - finger
+ name: pb on use case of loops.
+ hosts: host1
+ tasks:
+  - yum:
+     name: "{{item}}"
+     state: present
+    loops:
+     - git
+     - docker
+     - net-tools
+     - finger
