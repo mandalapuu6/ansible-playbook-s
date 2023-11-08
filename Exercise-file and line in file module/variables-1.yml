@@ -13,5 +13,5 @@
       state: touch
    - name: code to write the message into file.
      lineinfile:
-      path: /root/variables.txt
+      path: /root/varibles.txt
       line: 'The value of a is {{a}}, value of b is {{b}}, value of c is {{c}} and value of d is {{d}}'
