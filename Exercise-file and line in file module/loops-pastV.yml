@@ -5,10 +5,10 @@
  tasks:
    - name: below code for yum.
      yum:
-      name: "{{iteam}}"
+      name: "{{item}}"
       state: present
-     with_item:
+     with_items:
       - git
       - docker
       - net-tools
-      - finger
+      
