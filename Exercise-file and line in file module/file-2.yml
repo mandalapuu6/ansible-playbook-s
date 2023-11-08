@@ -4,5 +4,5 @@
  tasks:
    - lineinfile: 
       path: /root/india/states.txt
-      regexp: 'Telengana'
-      line: 'Andhra pradesh'
+      regexp: 'Andhra Pradesh'
+      line: 'Telengan'
