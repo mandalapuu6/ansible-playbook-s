@@ -1,12 +1,12 @@
 - 
- name: pb on use case of loops.
- hosts: host1
- tasks:
-   - name: below code for yum installations using loops.
-     yum:
-      name: "{{item}}"
-      state: present
-     loops:
+  name: pb on use case of loops.
+  hosts: host1
+  tasks:
+   -  name: below code for yum installations using loops.
+      yum:
+       name: "{{item}}"
+       state: present
+      loops:
        - git
        - docker
        - net-tools
