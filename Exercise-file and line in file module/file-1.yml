@@ -17,4 +17,4 @@
    - name: code to execute user permission.
      file:
       path: /root/india/states.txt
-      mode: w+x
+      mode: x
