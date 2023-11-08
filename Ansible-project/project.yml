@@ -1,0 +1,38 @@
+-
+ name: Ansible project.
+ hosts: host1
+ tasks:
+  - name: install apache web server.
+    yum:
+     name: httpd
+     state: present
+  - name: start the apache web server.
+    service: 
+     name: httpd
+     stste: start
+  - name: enable apace webserver a boottime
+    service:
+     name: httpd
+     enabled: yes
+  - name: creating a log directory
+    file:
+     path: /root/log
+     state: directory
+  - name: creating apache-log.logs file under log /root/directory-1/notes.txt
+    file: 
+     path: /root/log/apache-log.logs
+     state: touch
+  - name: code to write message in the file.
+    lineinfile:
+     path: /root/log/apache-log.logs
+     state: present
+     line: 'apache is successfully installed'
+  - name: write the web page code.
+    file:
+     path: /var/www/html/index.html
+     stste: touch
+  - name: code to write the message on web page.
+    lineinfile:
+     path: /var/www/html/index.html
+     state: present
+     line: '<html> <body> <h1> Ansible project code </h1> </body> </html>'
