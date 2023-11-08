@@ -2,8 +2,7 @@
   name: pb on use case of loops.
   hosts: host1
   tasks:
-   -  name: below code for yum installations using loops.
-      yum:
+    - yum:
        name: "{{item}}"
        state: present
       loops:
