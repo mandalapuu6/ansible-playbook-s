@@ -1,0 +1,17 @@
+- 
+ name: playbook on use case of variables concept.
+ hosts: host1
+ vars: 
+  a: 10
+  b: 20.5
+  c: 'Ap27DC2020'
+  d: "Welcome to india"
+ tasks:
+   - name: code to create a file.
+     file:
+     path: /root/varibles.txt
+     state: touch
+   - name: code to write the message into file.
+     lineinfile:
+      path: /root/variables.txt
+      line: 'The value of a is {{a}}, value of b is {{b}}, value of c is {{c}} and value of d is {{d}}'
