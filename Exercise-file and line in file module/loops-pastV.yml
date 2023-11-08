@@ -1,0 +1,14 @@
+# past version
+- 
+ name: pb use case of loops
+ hosts: host1
+ tasks:
+   - name: below code for yum.
+     yum:
+      name: "{{iteam}}"
+      state: present
+     with_item:
+      - git
+      - docker
+      - net-tools
+      - finger
