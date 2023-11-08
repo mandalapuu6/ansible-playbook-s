@@ -9,7 +9,7 @@
   - name: start the apache web server.
     service: 
      name: httpd
-     state: start
+     state: started
   - name: enable apace webserver a boottime
     service:
      name: httpd
