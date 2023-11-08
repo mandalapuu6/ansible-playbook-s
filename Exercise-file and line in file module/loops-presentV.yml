@@ -5,7 +5,7 @@
    - name: below code for yum installations using loops.
      yum:
       name: "{{item}}"
-      stste: present
+      state: present
      loops:
        - git
        - docker
