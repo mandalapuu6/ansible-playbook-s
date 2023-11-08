@@ -9,8 +9,8 @@
  tasks:
    - name: code to create a file.
      file:
-     path: /root/varibles.txt
-     state: touch
+      path: /root/varibles.txt
+      state: touch
    - name: code to write the message into file.
      lineinfile:
       path: /root/variables.txt
