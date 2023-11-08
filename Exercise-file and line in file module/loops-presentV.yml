@@ -1,0 +1,13 @@
+- 
+ name: pb on use case of loops.
+ hosts: host1
+ tasks:
+   - name: below code for yum installations using loops.
+     yum:
+      name: "{{item}}"
+      stste: present
+     loops:
+       - git
+       - docker
+       - net-tools
+       - finger
