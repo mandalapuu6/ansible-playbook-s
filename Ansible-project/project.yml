@@ -9,7 +9,7 @@
   - name: start the apache web server.
     service: 
      name: httpd
-     stste: start
+     state: start
   - name: enable apace webserver a boottime
     service:
      name: httpd
@@ -30,7 +30,7 @@
   - name: write the web page code.
     file:
      path: /var/www/html/index.html
-     stste: touch
+     state: touch
   - name: code to write the message on web page.
     lineinfile:
      path: /var/www/html/index.html
