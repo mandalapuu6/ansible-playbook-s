@@ -1,8 +1,0 @@
-- 
- name: Replacing the word.
- hosts: host1
- tasks:
-   - lineinfile: 
-      path: /root/india/states.txt
-      regexp: 'Andhra Pradesh'
-      line: 'Telengan'

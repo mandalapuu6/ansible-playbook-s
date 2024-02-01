@@ -1,8 +1,0 @@
-- 
- name: example on loops
- hosts: host1
- tasks:
-  - name: ansible loop example
-    yum: 
-     name: ['net-tools','httpd']
-     state: present
