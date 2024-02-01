@@ -1,0 +1,6 @@
+-
+ name: command to shutdown
+ hosts: host1,host2
+ tasks:
+  - command:
+     cmd: shutdown now
