@@ -1,7 +1,0 @@
--
- name: To remove net-tools and httpd.
- hosts: host1
- tasks:
-  - yum:
-     name: ['net-tools','httpd']
-     state: absent

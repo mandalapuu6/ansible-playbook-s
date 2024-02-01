@@ -1,7 +1,0 @@
--
- name: play book to create a folder
- hosts: host1,host2
- tasks:
-  - name: using command module
-    command:
-     cmd: mkdir /root/akhil
