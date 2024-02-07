@@ -9,7 +9,7 @@
   - name: code to create file.
     line:
      path: /root/akhil/states.txt
-     state: present
+     state: touch
   - name: code to write content.
     lineinfile:
      path: /root/akhil/states.txt
