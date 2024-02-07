@@ -5,7 +5,6 @@
   - name: create a file and write content.
     file:
      path: /root/akhil
-     state: present
   - name: code to create file.
     line:
      path: /root/akhil/states.txt
