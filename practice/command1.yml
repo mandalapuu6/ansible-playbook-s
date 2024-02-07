@@ -1,0 +1,7 @@
+-
+ name: playbook on command module
+ hosts: host1,host2
+ tasks:
+  name: to ceate directory
+  command:
+   cmd: mkdir /root/personal
