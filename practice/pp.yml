@@ -1,0 +1,22 @@
+- 
+ name: exercise on line in file modle.
+ hosts: host1
+ tasks:
+   - name: code to create a folder.
+     file:
+      path: /root/india
+      state: directory
+   - name: code to create a file.
+     file:
+      path: /root/india/states.txt
+      state: touch
+   - name: code to write content.
+     lineinfile:
+      path: /root/india/states.txt
+      line: 'Andhra pradesh'
+   - name: code to execute user permission.
+     file:
+      path: /root/india/states.txt
+      owner: root
+      group: root
+      mode: u+x
