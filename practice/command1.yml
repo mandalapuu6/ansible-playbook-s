@@ -4,4 +4,4 @@
  tasks:
   - name: to ceate directory
     command:
-     scmd: mkdir /root/personal
+     cmd: mkdir /root/personal
