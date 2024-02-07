@@ -1,0 +1,11 @@
+-
+ name: PB on command module
+ hosts: host1,host2
+ tasks:
+   - name: to create a file
+     file:
+      path: /root/akhil/sample.txt
+      state: touch
+   - copy:
+      dest: /root/akhil/sample.txt
+      content: 'alajshd'
