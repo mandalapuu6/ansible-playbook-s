@@ -1,6 +1,6 @@
 -
- name: code to install docker.
- hosta: host1
+ name: code to install docker
+ hosts: host1
  tasks:
    - yum:
       name: docker
