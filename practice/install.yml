@@ -1,0 +1,9 @@
+-
+ name: code to install docker.
+ hosta: host1
+ tasks:
+   - yum:
+      name: docker
+      state: present
+      
+   
