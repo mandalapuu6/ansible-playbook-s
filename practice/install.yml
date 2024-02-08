@@ -5,6 +5,4 @@
    - yum:
       name: docker
       state: present
-      ownwr: root
-      group: root
-      mode: u+x
+      
