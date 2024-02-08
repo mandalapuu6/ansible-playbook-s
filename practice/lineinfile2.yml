@@ -1,0 +1,12 @@
+-
+ name: line in file module.
+ hosts: host1,host2
+ tasks:
+  - file:
+     path: /root/file1.txt
+     state: touch
+  - lineinfile:
+     path: /root/file1.txt
+     line: 'surya'
+
+     
