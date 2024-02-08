@@ -1,0 +1,9 @@
+-
+ name: playbook on line in file.
+ hosts: host1,host2
+ tasks:
+   - name: repacing andhra padesh to telangana
+     lineinfile:
+      path: /root/akhil/states.txt
+      regexp: 'Andhra Pradesh'
+      line: 'Telangana'
