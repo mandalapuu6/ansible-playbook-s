@@ -5,4 +5,6 @@
  tasks:
   - yum:
      name: nginx
-     stste: present
+     state: present
+  - service:
+      state: started
