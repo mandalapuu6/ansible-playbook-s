@@ -1,0 +1,8 @@
+-
+ name: install ngnix
+ hosts: all
+ become: root
+ tasks:
+  - yum:
+     name: nginx
+     stste: present
