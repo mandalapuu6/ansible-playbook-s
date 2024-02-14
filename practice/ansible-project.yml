@@ -1,11 +1,11 @@
--
- name: ansible project
- hosts: host1,host2
- become: root
- tasks:
+- 
+  name: ansible project
+  hosts: host1,host2
+  become: root
+  tasks:
    - name: install apache-web server
      yum:
-       name: httpd
+      name: httpd
        state: present
    - name: start apache-web server
      services:
@@ -37,5 +37,5 @@
        path: /var/www/html/index.html
        state: present
        line: '<html> <body> <h1> Akhil Surya </h1> </body> </html>'
-       
+
       
