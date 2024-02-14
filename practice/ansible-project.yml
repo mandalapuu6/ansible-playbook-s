@@ -5,7 +5,7 @@
   tasks:
    - name: install apache-web server
      yum:
-      name: httpd
+       name: httpd
        state: present
    - name: start apache-web server
      services:
