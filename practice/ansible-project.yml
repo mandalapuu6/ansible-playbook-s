@@ -8,11 +8,11 @@
        name: httpd
        state: present
    - name: start apache-web server
-     services:
+     service:
        name: httpd
        state: started
    - name: enable apache web server boot time
-     services:
+     service:
        name: httpd
        enabled: yes
    - name: creating a log directory.
